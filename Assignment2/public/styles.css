@@ -1,0 +1,143 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: background 0.3s, color 0.3s;
+}
+
+body {
+    background-color: #fdf6f0;
+    color: #333;
+}
+
+body.dark-mode {
+    background-color: #1c1c1c;
+    color: white;
+}
+
+.todo-container {
+    width: 420px;
+    padding: 20px;
+    border-radius: 15px;
+    background: #ffffff;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+body.dark-mode .todo-container {
+    background: #222;
+    box-shadow: 5px 5px 15px rgba(255, 255, 255, 0.1);
+}
+
+#theme-toggle {
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    transition: 0.3s;
+}
+
+.sun {
+    display: inline-block;
+}
+
+.dark-mode .sun {
+    display: none;
+}
+
+.moon {
+    display: none;
+}
+
+.dark-mode .moon {
+    display: inline-block;
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+input {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #f0f0f0;
+    color: black;
+}
+
+body.dark-mode input {
+    background: #333;
+    color: white;
+}
+
+.add-btn {
+    background: #4CAF50;
+    color: white;
+    padding: 12px 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.add-btn:hover {
+    background: #388e3c;
+}
+
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff5e1; 
+    margin: 5px 0;
+    padding: 12px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+body.dark-mode .task-item {
+    background: #2a2a2a; 
+    color: white;  
+}
+
+.task-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.task-checkbox {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.delete-btn {
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: #d9534f;
+}
+
+.delete-btn:hover {
+    color: #c9302c;
+}
